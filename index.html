@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naturesbasket</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body >
+    <div id="navbar">
+        <div id="f_nav">
+            <img onclick="home()" id="web_logo" src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2" alt="">
+            <div id="width_search">
+                <div id="sf">
+                <div id="search_option">
+                    <p >Online Slots Availability</p>
+                    <div class="bor_right"></div>
+                    <p >Fresh & Fast</p>
+                    <div class="bor_right"></div>
+                    <p >Store Locator</p>
+                    <div class="bor_right"></div>
+                    <p >Contact Us</p>
+                    <div class="bor_right"></div>
+                </div>
+                
+                    <p>Login | Register</p>
+                </div>
+                <div id="search_div">
+                    <div class="pin">Enter Pin</div>
+                    <div>
+                        <select style="height: 37px; margin-top: -6px;"  name="" id="city">
+                            <option value="">Mumbai</option>
+                            <option value="">Pune</option>
+                            <option value="">Delhi NCR</option>
+                            <option value="">Banglore</option>
+                            <option value="">Thane</option>
+                            <option value="">Navi Mumbai</option>
+                            <option value="">Kolkata</option>
+                            <option value="">Raigarh MH</option>
+
+                        </select>
+                    </div>
+                    <div style="display: flex;">
+                        <input id="input" type="text" placeholder="Start Shopping">
+                        <img class="search_icon" src="https://www.naturesbasket.co.in/Images/search-button.jpg" >
+                    </div>
+
+                    <div>
+                        <img class="search_icon" style="width: 20px;" onclick="open_cart()" src="https://www.naturesbasket.co.in/Images/header-icons.jpg" alt="">
+                    
+                    </div>              
+                </div>
+            </div>
+
+        </div>
+        <div id="s_nav">
+            <select name="" id="catagory">
+                <option class="cat_o" value="">SHOP BY CATEGORY</option>
+                <option class="cat_options" value="">Wine And Beer</option>
+                <option class="cat_options" value="">Fruits And Vegetables</option>
+                <option class="cat_options" value="">Cheese, Meat And Fruit Platters</option>
+                <option class="cat_options" value="">Delicatessen & Cheese</option>
+                <option class="cat_options" value="">International Cuisine</option>
+                <option class="cat_options" value="">Health</option>
+                <option class="cat_options" value="">Indian Grocery</option>
+                <option class="cat_options" value="">Confectionary & Patisserie</option>
+                <option class="cat_options" value="">Meats, Seafood And Eggs</option>
+                <option class="cat_options" value="">Snacks & Beverages</option>
+                <option class="cat_options" value="">Breakfast, Dairy & Bakery</option>
+                <option class="cat_options" value="">Instant Meals & Aids</option>
+                <option class="cat_options" value="">The Good Food Cafe</option>
+                <option class="cat_options" value="">Packing Material</option>
+            </select>
+
+            <p class="s_options"> PAST PURCHASES </p>
+            <p class="s_options"> GIFTING </p>
+            <p class="s_options"> REWARDS </p>
+            <p class="s_options"> BLOG </p>
+            <p class="s_options"> OFFERS </p>
+            <p class="s_options"> CONNOISSEUR'S SELECTION </p>
+            <p class="s_options"> BOOK STORE VISITE </p>
+        </div>
+
+
+    </div>
+    <img  id="banner" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg" alt="">
+    
+    <div id="images">
+    </div>
+    <div>
+        <img class="three_cat" src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=7" alt="">
+        <img class="three_cat" src="https://www.naturesbasket.co.in/Images/Japanesecuisine-webbox.png?v=9" alt="">
+        <img class="three_cat" src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15" alt="">
+    </div>
+
+    <div style="display: flex; width: fit-content; margin: auto;">
+        <div class="grey_line"></div>
+        <h2>SHOP BY CATEGORY</h2>
+        <div class="grey_line"></div>
+    </div>
+    
+<!-- sliding divs -->
+<div id="overall">
+    <div class="main-carousel-h" data-flickity='{"wrapAround":true ,"autoPlay":false}'>
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Exotic Vegetables</b>
+                
+                    <p class="bor_bottum">Asparagus Artichokes</p>
+                    <p class="bor_bottum">Avacodos Peppers</p>
+                    <p class="bor_bottum">Braccoli zucchini</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Meat, Poultry & Seafood</b>
+                
+                    <p class="bor_bottum">Chicken Cuts Lollipops Mince</p>
+                    <p class="bor_bottum">Fish Other Seafood</p>
+                    <p class="bor_bottum">Fresh Kebabs Others</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Fresh Artisanal Breads</b>
+                
+                    <p class="bor_bottum">Breadstickes Crostinni Lavache</p>
+                    <p class="bor_bottum">Buns Croissants Bagel</p>
+                    <p class="bor_bottum">Muffins Cake Brownies</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Daily Essentials</b>
+                
+                    <p class="bor_bottum">Snacks & Beverages</p>
+                    <p class="bor_bottum">Breakfast, Dairy & Bakery</p>
+                    <p class="bor_bottum">Steples</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Organicweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Organic</b>
+                
+                    <p class="bor_bottum">Fruits & Vegetables</p>
+                    <p class="bor_bottum">Staples</p>
+                    <p class="bor_bottum">Bakery Dairy</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Readytoeatweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Ready to Eat</b>
+                
+                    <p class="bor_bottum">Hors'D Oeuvres</p>
+                    <p class="bor_bottum">Patisserie Desserts</p>
+                    <p class="bor_bottum">Soups Salads</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Bespoke Gifts</b>
+                
+                    <p class="bor_bottum">Celebrations with Nature's Basket</p>
+                    <p class="bor_bottum">World Food Hampers</p>
+                    <p class="bor_bottum">Bulk Enquiry</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+
+        <div class="carousel-cell-h">
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/fineteasweb.png"
+                alt="">
+                <div class="div_info">
+                <b>Fine Teas</b>
+                
+                    <p class="bor_bottum">Black Teas</p>
+                    <p class="bor_bottum">Green white oolong Teas</p>
+                    <p class="bor_bottum">Herbal Teas</p>
+                    <b style="color: rgb(140, 196, 58);">view all</b>
+                </div>
+        </div>
+       
+    </div>
+</div>
+
+<div style="display: flex; width: fit-content; margin: auto;">
+    <div class="grey_line"></div>
+    <h2>TRENDING OFFERS</h2>
+    <div class="grey_line"></div>
+</div>
+
+<div id="trending">
+
+</div>
+
+<div style="display: flex; width: fit-content; margin: auto;">
+    <div class="grey_line"></div>
+    <h2>OUR EVENTS</h2>
+    <div class="grey_line"></div>
+</div>
+<div style="display: flex; justify-content: space-around;">
+    <img class="event_img" src="https://www.naturesbasket.co.in/Images/PhotoGallery/SanjeevKapoor_at%20_KolkataHome.jpg" alt="">
+    <img class="event_img" src="https://www.naturesbasket.co.in/Images/PhotoGallery/IndiaSportsHonours2019NaturesBasketGiftingBNR.jpg?v=2" alt="">
+    <img class="event_img" src="https://www.naturesbasket.co.in/Images/PhotoGallery/SaranshHome.png?v=2" alt="">
+</div>
+<div style="display: flex; width: fit-content; margin: auto;">
+    <div class="grey_line"></div>
+    <h2>SHOP BY WORLD BRANDS</h2>
+    <div class="grey_line"></div>
+</div>
+<div style="display: flex; justify-content: space-around; ">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/ceres.jpg" alt="">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/lindt.jpg" alt="">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/silk.jpg" alt="">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/davidoff-cafe.jpg" alt="">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/lexlusif.jpg" alt="">
+</div>
+
+<b>Online Grocery Store India</b>
+<p style="margin-top: -3px;">Nature’s Basket is a grocery store operating in Mumbai, Bangalore and Pune with deliveries to all cities across India including Hyderabad, Delhi, Kolkata, Chennai, Surat and more. We offer a wide range of food products for all your everyday needs and even offer grocery home delivery as well as a grocery shop online for you to purchase from. Our online grocery store has fresh fruits and vegetables, fresh and frozen meats and seafood, a wide range of breads and other packaged bakery products as well as a range of fresh cheeses from around the world. We even have a range of every staple and international cuisine product to meet your needs along with organic products for fresh and packaged food items. With our offerings, we have the best online food shop & online grocery shopping platform available for all your grocery products as well as physical grocery stores in select cities.</p>
+
+<b>Best Online Grocery Supermarket India</b>
+<p style="margin-top: -3px;">With stores in Mumbai, Pune and Bangalore and online delivery services, you can now have all your grocery supermarket shopping done online. We have a wide range of grocery products to offer at our stores for you to buy groceries from a channel convenient to you. Choose from fresh produce to packaged goods, buy groceries online and get them delivered straight to your doorstep, thus making it a convenient and quick process. You can pay for the shopping using credit cards, cash, coupons or online banking facility. We are sure to have all the grocery products for your daily dietary needs from regular local Indian brands and products to exotic and international imported ones.
+
+</p>
+
+<b>Online Grocery Supermarket Shopping India</b>
+<p style="margin-top: -3px;">With our wide range of groceries available, Nature’s Basket is a large online supermarket and grocery store for all your everyday food needs. We offer you the best quality grocery products which you can buy online and have them delivered to you conveniently. We have our grocery stores in Mumbai, Pune and Bangalore where you can buy groceries and food items. We also have the best online grocery store to shop for fruits and vegetables, meats and seafood, breads and other bakery items as well as cheese and dairy. Order groceries online from the best quality grocery store at best prices.</p>
+
+
+<div id="footer">
+    <div class="f_option">
+        <h3>Download The App</h3>
+        <img  class="d_img" src="https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg" alt="">
+        <img class="d_img"  src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="">
+    </div>
+    <div>
+        <b>About Us</b>
+        <p>Our Vision And Purpuse</p>
+        <p>Quelity Standards</p>
+        <p>Awards</p>
+        <p>FAQ's</p>
+        <p>Available Delivery Slots</p>
+        <p>Vendor Connet</p>
+    </div>
+
+    <div>
+        <b>News & Media</b>
+        <p>Press Release</p>
+        <p>Newsletters</p>
+        <p>Events</p>
+        <p>Photo gallery</p>
+        <p>Recipes</p>
+        <p>NBTV</p>
+        <p>Our Vertual Store</p>
+    </div>
+
+    <div>
+        <b>Our Policies</b>
+        <p>Privecy Policy</p>
+        <p>Payment Policy</p>
+        <p>Disclaimer</p>
+        <p>Statory Complience</p>
+        <p>Data Protection Policy</p>
+        <p>Grievace officer</p>
+        <p>Informetion Securety Policy</p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    let i=0;
+    let showimgs = document.getElementById("images");
+    let id;
+function start(){
+
+let images_arr =["https://d1z88p83zuviay.cloudfront.net/BannerImages/236059de-0102-4db5-a909-9f22f9b8c8ec_1320x376.jpg","https://d1z88p83zuviay.cloudfront.net/BannerImages/d923ad74-9f00-45a0-b19f-4af69eb07df6_1320x376.jpg",
+"https://d1z88p83zuviay.cloudfront.net/BannerImages/172ece1d-70d5-44d5-a5f4-0d236c1d815a_1320x376.jpg",
+"https://d1z88p83zuviay.cloudfront.net/BannerImages/67cd2b0e-9bc3-4144-bb6a-25512984f2e7_1320x376.jpg","https://d1z88p83zuviay.cloudfront.net/BannerImages/bc1eefce-0553-4b16-bc75-45a4ee42a22e_1320x376.jpg","https://d1z88p83zuviay.cloudfront.net/BannerImages/28b8913f-ae0e-4afe-ac72-bae62be8ffb2_1320x376.png","https://d1z88p83zuviay.cloudfront.net/BannerImages/84f0e140-5920-4b28-9f69-30d35b0c194f_1320x376.jpg"
+];
+
+let img = document.createElement("img");
+img.setAttribute("class","sliding_img")
+id = setInterval(function(){
+        if(i === images_arr.length){
+            i=0;
+        }
+        showimgs.innerHTML = null;
+
+    img.src =images_arr[i]; 
+   
+    showimgs.append(img);
+    i++;
+},2000)
+
+
+}
+start();
+
+
+</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="js\index.js"></script>

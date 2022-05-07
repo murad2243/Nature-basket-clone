@@ -1,0 +1,277 @@
+body{
+    max-width: 100%;
+}
+#search_div{
+    display: flex;
+    border: grey 1px solid;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 10px;
+    background-color: #F3F3F3;
+}
+
+#navbar{
+    width: 100%;
+}
+#f_nav{
+    display: flex;
+    width: 100%;
+}
+#width_search{
+    width: 1000px;
+    color: #393939;
+}
+.pin{
+    height: 20px;
+    background-color: #F3F3F3;
+    padding: 5px;
+}
+#web_logo{
+    width: 300px;
+    margin: 10px;
+}
+.sliding_img{
+    width: 100%;
+    margin: auto;
+}
+#input{
+    width: 720px;
+    height: 31px;
+    margin-top: -6px;
+    margin-left: -11px;
+}
+#sf{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#catagory{
+ font-weight: 600;
+ padding: 5px;
+ line-height: 30px;
+ background-color:#f3f3f3 ;
+ height: 32px;
+ margin-top: -6px;
+ border-radius: 5px;
+ margin-left: -5px;
+}
+.cat_o{
+    color: #b71761;
+    font-weight: 600;
+}
+.cat_options{
+    
+    margin: 10px;
+    border: rgb(12, 0, 0) 1px solid;
+}
+.bor_right{
+    border: grey solid 0.5px;
+    width: 0px;
+    height: 15px;
+    margin-top: 15px;
+    
+}
+#search_option{
+    display: flex;
+    gap: 10px;
+    color: #393939;
+
+}
+.search_icon{
+    height: 30px;
+}
+
+#s_nav{
+    width: 98%;
+    border: 1px rgb(184, 181, 181) solid;
+    border-radius: 5px;
+    padding: 5px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s_options{
+ height: 20px;
+ margin-top: -1px;
+}
+.s_options:hover{
+    background-color: #f3f3f3 ;
+    border-bottom: 2px green solid;
+}
+#banner{
+    padding: 5px;
+    margin: auto;
+    border-radius: 20px;
+   
+}
+.three_cat{
+    border-radius: 10px;
+    padding: 8px;
+    
+}
+.grey_line{
+    height: 0px;
+    width: 200px;
+    border: solid grey 1px;
+    margin: 10px;
+    margin-top: 35px;
+
+}
+/* sliding divs CSS */
+body{
+font-family: CircularXX,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.courses{
+margin-top: 60px;
+}
+.button{
+display:flex;
+flex-direction: row;
+overflow-x: auto;
+margin-top: 24px;
+grid-gap: 37px;
+gap: 37px;
+
+}
+.button1{
+font-weight: 600;
+font-size: 24px;
+line-height: 18px;
+color: #f23e36;
+cursor: pointer;
+position: relative;
+padding-left:30px;
+text-decoration: underline;
+margin-bottom:80px;
+
+}
+
+.button2{
+text-align:center;
+margin-top:30px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:0px;
+padding:12px;
+font-weight:600;
+background: #f23e36;
+color:white;
+width:300px;
+height:50px;
+}
+#heading{
+display:flex;
+width:81%;
+margin:auto;
+justify-content: space-between;
+margin-bottom:20px;
+}
+.viewall{
+color:red;
+text-decoration: underline;
+}
+.carousel-cell-h::before{
+display:none;
+}
+.carousel-cell-h>img{
+width:290px;
+height: 270px;
+border-radius: 10px;
+}
+.carousel-cell-h{
+width:290px;
+height:450px;
+margin:10px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main-carousel-h{
+ display:flex;
+ position:relative;
+ display:block;
+ width: 98%;
+ margin:auto;
+}
+#smallimg{
+display:flex;
+justify-content: space-around;
+height:65px;
+margin-left:20px;
+}
+#smallimg>img{
+width:60px;
+margin-top:15px;
+}
+#smallimg>p{
+margin-top:18px;
+font-size:20px;
+}
+
+
+.button2{
+border-radius: 8px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.bor_bottum{
+margin-top: -3px;
+border-bottom: dotted 1px rgb(182, 176, 176);
+}
+.div_info{
+padding: 10px;
+}
+
+
+.products{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+#trending{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.p_button{
+    width: 100px;
+    margin: 10px;
+    height: 30px;
+    background-color: rgb(153, 212, 153);
+    border-radius: 5px;
+}
+.p_div{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 15px;
+    margin: 10px;
+}
+.p_button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    
+}
+.price_add{
+    display: flex;
+    justify-content: space-around;
+}
+.event_img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+#footer{
+    background-color: #fbfbfb;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.f_option{
+    width: 400px;
+    
+}
+.d_img{
+    height: 80px;
+}

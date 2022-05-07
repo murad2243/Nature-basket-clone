@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        #buy{
+            display: flex;
+            justify-content: space-between;
+        }
+        .b_buttons{
+            height: 30px;
+            background-color: #92be4d;
+            color: white;
+            border-radius: 5px;
+        }
+        .b_buttons:hover{
+            background-color: white;
+            color: #92be4d;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="f_nav">
+            <img id="web_logo" onclick="home()"  src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2" alt="">
+            <div id="width_search">
+                <div id="sf">
+                <div id="search_option">
+                    <p >Online Slots Availability</p>
+                    <div class="bor_right"></div>
+                    <p >Fresh & Fast</p>
+                    <div class="bor_right"></div>
+                    <p >Store Locator</p>
+                    <div class="bor_right"></div>
+                    <p >Contact Us</p>
+                    <div class="bor_right"></div>
+                </div>
+                
+                    <p>Login | Register</p>
+                </div>
+                <div id="search_div">
+                    <div class="pin">Enter Pin</div>
+                    <div>
+                        <select style="height: 37px; margin-top: -6px;"  name="" id="city">
+                            <option value="">Mumbai</option>
+                            <option value="">Pune</option>
+                            <option value="">Delhi NCR</option>
+                            <option value="">Banglore</option>
+                            <option value="">Thane</option>
+                            <option value="">Navi Mumbai</option>
+                            <option value="">Kolkata</option>
+                            <option value="">Raigarh MH</option>
+
+                        </select>
+                    </div>
+                    <div style="display: flex;">
+                        <input id="input" type="text" placeholder="Start Shopping">
+                        <img class="search_icon" src="https://www.naturesbasket.co.in/Images/search-button.jpg" >
+                    </div>
+
+                    <div>
+                        <img class="search_icon" style="width: 20px;" src="https://www.naturesbasket.co.in/Images/header-icons.jpg" alt="">
+                    
+                    </div>              
+                </div>
+            </div>
+
+        </div>
+        <div id="s_nav">
+            <select name="" id="catagory">
+                <option class="cat_o" value="">SHOP BY CATEGORY</option>
+                <option class="cat_options" value="">Wine And Beer</option>
+                <option class="cat_options" value="">Fruits And Vegetables</option>
+                <option class="cat_options" value="">Cheese, Meat And Fruit Platters</option>
+                <option class="cat_options" value="">Delicatessen & Cheese</option>
+                <option class="cat_options" value="">International Cuisine</option>
+                <option class="cat_options" value="">Health</option>
+                <option class="cat_options" value="">Indian Grocery</option>
+                <option class="cat_options" value="">Confectionary & Patisserie</option>
+                <option class="cat_options" value="">Meats, Seafood And Eggs</option>
+                <option class="cat_options" value="">Snacks & Beverages</option>
+                <option class="cat_options" value="">Breakfast, Dairy & Bakery</option>
+                <option class="cat_options" value="">Instant Meals & Aids</option>
+                <option class="cat_options" value="">The Good Food Cafe</option>
+                <option class="cat_options" value="">Packing Material</option>
+            </select>
+
+            <p class="s_options"> PAST PURCHASES </p>
+            <p class="s_options"> GIFTING </p>
+            <p class="s_options"> REWARDS </p>
+            <p class="s_options"> BLOG </p>
+            <p class="s_options"> OFFERS </p>
+            <p class="s_options"> CONNOISSEUR'S SELECTION </p>
+            <p class="s_options"> BOOK STORE VISITE </p>
+        </div>
+
+
+    </div>
+    <img style="margin: 10px;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/websitecart.png" alt="">
+    
+    <div id="buy">
+        <div>
+        <h3>Total Amount:</h3>
+        <p id="total"></p>
+    </div>
+    <div>
+        <button class="b_buttons" onclick="home()">CONTINUE SHOPPING</button>
+        <button class="b_buttons" onclick="check()">PROCEED TO CHECKOUT</button>
+    </div>
+    </div>
+    
+    <div id="cart_items" class="grid" >
+    </div>  
+</body>
+</html>
+<script>
+
+
+
+    let appendcart = document.getElementById("cart_items");
+    let data = JSON.parse(localStorage.getItem("cart_data"));
+ console.log(data);
+
+ function check(){
+    alert("Thanks for Shopping");
+    console.log("heelp");
+    localStorage.clear();
+    window.open("cart.html")
+};
+ function home(){
+      window.open("index.html","_self")
+  }
+
+let count = 0;
+
+
+  function appendData(data){
+ data.forEach(el => {
+   
+ let div1 = document.createElement("div");
+ div1.setAttribute("class","p_div")
+
+ let pimg = document.createElement("img");
+ pimg.src = el.brand;
+ pimg.setAttribute("class","products")
+
+
+ let title = document.createElement("p");
+ title.innerHTML = "Product Name: "+el.name;
+
+ let con = document.createElement("p");
+ con.innerText = "1PC";
+
+ let price = document.createElement("p");
+ price.innerHTML = "<b>Price: </b> ₹"+el.price;
+ count = count+el.price;
+
+  div1.append(pimg,title,con,price);
+  console.log(div1);
+   appendcart.append(div1);
+});
+}
+
+
+appendData(data);
+console.log(count);
+
+let total = document.getElementById("total");
+total.innerText = "₹"+count;
+function proceed(){
+
+}
+
+
+</script>
